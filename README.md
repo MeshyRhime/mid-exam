@@ -123,17 +123,17 @@ Here are simple steps on how to interact with the Sales Inventory System:
 ### Sales Dashboard Overview
 The main screen summarizing financial metrics, filtered sales data, and high-level transaction volume.
 
-!(Screenshot%20(60).png)
+!(dashboard.png)
 
 ### Products List View
 The interface for viewing and managing product inventory, highlighting stock levels and available actions.
 
-!(Screenshot%20(61).png)
+!(products.png)
 
 ### Categories Management
 The dedicated page for listing, describing, and administering all product categories.
 
-!(Screenshot%20(62).png)
+!(category.png)
 
 ---
 
