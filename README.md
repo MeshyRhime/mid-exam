@@ -61,7 +61,7 @@ This project requires **PHP**, **Composer**, and **Node.js/npm** to run locally.
     git clone [https://github.com/MeshyRhime/mid-exam.git](https://github.com/MeshyRhime/mid-exam.git)
     cd mid-exam
     ```
-    !(Screenshot%20(59).png)
+    !(dashboard.png)
 
 2.  **Install PHP Dependencies (via Composer):**
     This installs the Laravel framework and all necessary backend libraries.
@@ -137,7 +137,7 @@ The dedicated page for listing, describing, and administering all product catego
 
 ---
 
-## Contributors
+## Author
 
 * **Mezrhime Kyle B. Tangalin**
 
