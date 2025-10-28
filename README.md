@@ -329,7 +329,3 @@ The system also includes a dashboard that provides real-time sales data and inve
 
 This project is licensed under the **MIT License**.
 © 2025 Mezrhime Kyle B. Tangalin
-
-```
-
----
