@@ -1,6 +1,217 @@
-# mid-exam
-This session covers the complete lifecycle of a local and remote Git repository, focusing on essential version control commands, user configuration, remote connectivity, and collaborative branch management, including creating, merging, and cleaning up feature branches.
+Perfect 👍 — here’s your **final, fully Markdown-corrected version** of the `README.md` file.
+All code blocks now use proper Markdown triple backticks (```) for clean rendering on GitHub, and everything is consistently formatted with headings and spacing.
 
+---
+
+````markdown
+# 🧩 Assignment #1 — Git and GitHub Collaboration
+
+This document contains the complete list of Git and GitHub commands with their corresponding descriptions.
+
+---
+
+## 1. Create Local Repository
+
+**Command:**
+```bash
+git init
+````
+
+**Description:**
+Initializes a new Git repository in your current project folder. This creates a hidden `.git` directory that tracks all changes.
+
+---
+
+## 2. Add Files to Staging Area
+
+**Command:**
+
+```bash
+git add .
+```
+
+**Description:**
+Adds all files in your project to the staging area, preparing them for commit.
+
+---
+
+## 3. Commit Changes
+
+**Command:**
+
+```bash
+git commit -m "Initial commit"
+```
+
+**Description:**
+Records the staged changes in your local repository with a descriptive message.
+
+---
+
+## 4. Configure User Identity
+
+**Commands:**
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+```
+
+**Description:**
+Sets your username and email so Git can record who made each commit.
+
+---
+
+## 5. Connect to Remote Repository
+
+**Command:**
+
+```bash
+git remote add origin https://github.com/yourusername/midterm-collab.git
+```
+
+**Description:**
+Connects your local repository to a remote GitHub repository named `midterm-collab`.
+
+---
+
+## 6. Rename and Push Main Branch
+
+**Commands:**
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+**Description:**
+Renames your branch to `main` and pushes your commits to GitHub, linking your local branch to the remote one.
+
+---
+
+## 7. Clone Repository (Partner’s Repo)
+
+**Command:**
+
+```bash
+git clone https://github.com/partnerusername/partner-repo.git
+```
+
+**Description:**
+Creates a copy of your partner’s repository on your local computer, including all files and version history.
+
+---
+
+## 8. Create and Switch Branch
+
+**Command:**
+
+```bash
+git checkout -b feature-update
+```
+
+**Description:**
+Creates a new branch named `feature-update` and switches to it immediately.
+
+---
+
+## 9. Make and Commit Changes in Branch
+
+**Commands:**
+
+```bash
+# Edit your files as needed
+git add .
+git commit -m "Added new feature or updated content"
+```
+
+**Description:**
+Stages your modified files and saves them with a commit message that describes the changes.
+
+---
+
+## 10. View and Compare Branches
+
+**Commands:**
+
+```bash
+git branch
+git diff main feature-update
+```
+
+**Description:**
+Displays all branches in your repository and shows the differences between `main` and `feature-update`.
+
+---
+
+## 11. Merge Branch with Main
+
+**Commands:**
+
+```bash
+git checkout main
+git merge feature-update
+```
+
+**Description:**
+Merges the `feature-update` branch into the `main` branch, combining both sets of work.
+
+---
+
+## 12. Delete a Branch After Merge
+
+**Command:**
+
+```bash
+git branch -d feature-update
+```
+
+**Description:**
+Deletes the merged branch from your local repository to keep it clean.
+
+---
+
+## 13. Fetch and Pull Updates from GitHub
+
+**Commands:**
+
+```bash
+git fetch
+git pull
+```
+
+**Description:**
+`fetch` checks for changes from the remote repository, while `pull` downloads and applies them to your local branch.
+
+---
+
+## 14. View Remote Repository Information
+
+**Command:**
+
+```bash
+git remote show origin
+```
+
+**Description:**
+Displays details about your connected remote repository, such as fetch and push URLs.
+
+---
+
+## 15. Undo or Restore Changes
+
+**Commands:**
+
+```bash
+git restore filename.txt
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+```
+
+**Description:**
+Restores files to their last saved state or undoes recent commits, depending on which command is used.
+
+---
 
 # 🛒 Laravel Sales Inventory Management System
 
@@ -14,139 +225,117 @@ This session covers the complete lifecycle of a local and remote Git repository,
 
 ## Description / Overview
 
-This project is a **web-based Sales Inventory Management System** built using the **Laravel Framework**. It provides a robust solution for businesses to efficiently track sales, manage product inventory levels, and organize items into logical categories. The system features a dynamic dashboard for **real-time sales reporting** and dedicated interfaces for managing products and categories, ensuring effective stock control and streamlined data organization.
+This project is a **web-based Sales Inventory Management System** built using the **Laravel Framework**.
+It helps businesses efficiently manage product inventories, track sales, and organize products into categories.
+The system also includes a dashboard that provides real-time sales data and inventory insights.
 
 ---
 
 ## Objectives
 
-The main goals and learning outcomes achieved through this midterm project were to:
-
-1.  **Develop a full-stack CRUD application** using the **Laravel MVC architecture** to manage core business entities (Products, Categories, Sales).
-2.  **Implement effective database modeling** and migrations for inventory and transaction data.
-3.  **Create a data-driven dashboard** to visually present key sales metrics and inventory alerts over flexible time ranges.
-4.  **Demonstrate proficiency** in web development skills, including routing, controllers, views, and database interaction within a professional framework.
-5.  **Utilize Git and GitHub** for version control and project management.
+1. Develop a full-stack CRUD application using **Laravel MVC architecture**.
+2. Implement database modeling and migrations for inventory and transactions.
+3. Build a **data-driven dashboard** to display sales metrics and low-stock alerts.
+4. Demonstrate proficiency in Laravel’s **controllers, routes, and Blade views**.
+5. Apply **Git and GitHub** for project version control and collaboration.
 
 ---
 
 ## Features / Functionality
 
-The Sales Inventory Management System offers the following core functionalities:
-
 ### **Sales Dashboard**
-* **Sales Filtering:** Users can filter sales data based on a **Start Date** and **End Date**.
-* **Key Metrics:** Displays crucial financial data: **Total Cash Income (All Time)**, **Sales (for the selected period)**, and the total **Transactions (for the selected period)**.
-* **Inventory Insights:** Includes dedicated sections for **Top 5 Selling Products (by quantity)** and **Low Stock Alerts**.
-* **Transaction Entry:** A button to **Record New Sale**.
+
+* Filter sales data by **start** and **end** dates.
+* Display key metrics such as **total income**, **sales**, and **transactions**.
+* Show **top 5 selling products** and **low stock alerts**.
+* Record new sales transactions.
 
 ### **Product Management**
-* **Product Listing:** A comprehensive table view showing **ID**, **Name**, **Category**, **Price**, and **Stock** level.
-* **Stock Monitoring:** Products with low stock (e.g., Tomatoes) are visually flagged with a **Low Stock (1)** warning.
-* **CRUD Operations:** Functionality to **Add New Product**, and perform **View**, **Edit**, and **Delete** actions.
-* **Search & Filter:** Advanced filtering options by **Category** and a search bar for **Name/Description**.
+
+* View, add, edit, and delete products.
+* Filter products by category and search by name.
+* View stock levels and get low-stock warnings.
 
 ### **Category Management**
-* **Category Listing:** Displays all product categories with their **ID**, **Name**, and **Description**.
-* **Management:** Ability to **Add New Category**, along with individual **View**, **Edit**, and **Delete** actions.
+
+* Add, view, edit, and delete product categories.
+* Display category details such as ID, name, and description.
 
 ---
 
-## Installation Instructions 🛠️
+## Installation Instructions
 
-This project requires **PHP**, **Composer**, and **Node.js/npm** to run locally.
+1. **Clone the Repository**
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/MeshyRhime/mid-exam.git](https://github.com/MeshyRhime/mid-exam.git)
-    cd mid-exam
-    ```
-    !(dashboard.png)
+   ```bash
+   git clone https://github.com/MeshyRhime/mid-exam.git
+   cd mid-exam
+   ```
 
-2.  **Install PHP Dependencies (via Composer):**
-    This installs the Laravel framework and all necessary backend libraries.
-    ```bash
-    composer install
-    ```
+2. **Install PHP Dependencies**
 
-3.  **Install JavaScript Dependencies (via npm):**
-    This installs front-end dependencies required for asset compilation (CSS/JS).
-    ```bash
-    npm install
-    ```
+   ```bash
+   composer install
+   ```
 
-4.  **Setup Environment and Key Generation:**
-    * Create the environment configuration file by copying the example:
-        ```bash
-        cp .env.example .env
-        ```
-    * Generate the unique application encryption key:
-        ```bash
-        php artisan key:generate
-        ```
-    * **Edit the newly created `.env` file** to configure your database connection (e.g., `DB_DATABASE`, `DB_USERNAME`, etc.).
+3. **Install JavaScript Dependencies**
 
-5.  **Database Migration and Seeding (Laravel Commands):**
-    Run the migrations to create all database tables and seed initial data (if applicable):
-    ```bash
-    php artisan migrate --seed
-    ```
+   ```bash
+   npm install
+   ```
 
-6.  **Compile Assets (Node Command):**
-    Compile and bundle the CSS and JavaScript assets for use in the browser:
-    ```bash
-    npm run build
-    ```
-    *(Use `npm run dev` for live recompilation during development.)*
+4. **Setup Environment**
 
-7.  **Run the Server (Laravel Command):**
-    Start the local development server:
-    ```bash
-    php artisan serve
-    ```
-    The application will be accessible at `http://127.0.0.1:8000/dashboard`.
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+   Edit the `.env` file to configure your database connection.
+
+5. **Run Migrations**
+
+   ```bash
+   php artisan migrate --seed
+   ```
+
+6. **Compile Assets**
+
+   ```bash
+   npm run build
+   ```
+
+7. **Run the Server**
+
+   ```bash
+   php artisan serve
+   ```
+
+   The application will be accessible at:
+   [http://127.0.0.1:8000/dashboard](http://127.0.0.1:8000/dashboard)
 
 ---
 
 ## Usage
 
-Here are simple steps on how to interact with the Sales Inventory System:
-
-1.  **Dashboard Review:** Access the Dashboard. Use the date filters and click **Update Data** to analyze sales trends.
-2.  **Category Setup:** Navigate to the **Categories** link and use **+ Add New Category** to define product groups.
-3.  **Product Entry:** Go to the **Products** link. Click **+ Add New Product** and enter details. Monitor the **Stock** column for low stock warnings.
-
----
-
-## Screenshots or Code Snippets
-
-### Sales Dashboard Overview
-The main screen summarizing financial metrics, filtered sales data, and high-level transaction volume.
-
-!(dashboard.png)
-
-### Products List View
-The interface for viewing and managing product inventory, highlighting stock levels and available actions.
-
-!(products.png)
-
-### Categories Management
-The dedicated page for listing, describing, and administering all product categories.
-
-!(category.png)
+1. Access the **Dashboard** to view sales and inventory metrics.
+2. Use the **Categories** section to organize products.
+3. Manage **Products** by adding, editing, or deleting entries.
+4. Monitor stock levels and check for low inventory warnings.
 
 ---
 
 ## Author
 
-* **Mezrhime Kyle B. Tangalin**
+**Mezrhime Kyle B. Tangalin**
 
 ---
 
 ## License
 
-This project is open-sourced under the **MIT License**.
+This project is licensed under the **MIT License**.
+© 2025 Mezrhime Kyle B. Tangalin
 
-The full license text can be found in the `LICENSE.txt` file in the root of the repository.
+```
 
-**Copyright (c) 2025 Mezrhime Kyle B. Tangalin**
+---
