@@ -1,9 +1,3 @@
-Perfect 👍 — here’s your **final, fully Markdown-corrected version** of the `README.md` file.
-All code blocks now use proper Markdown triple backticks (```) for clean rendering on GitHub, and everything is consistently formatted with headings and spacing.
-
----
-
-````markdown
 # 🧩 Assignment #1 — Git and GitHub Collaboration
 
 This document contains the complete list of Git and GitHub commands with their corresponding descriptions.
