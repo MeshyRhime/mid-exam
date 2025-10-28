@@ -1,15 +1,10 @@
-# 🧩 Assignment #1 — Git and GitHub Collaboration
-
-This document contains the complete list of Git and GitHub commands with their corresponding descriptions.
-
----
-
 ## 1. Create Local Repository
 
 **Command:**
+
 ```bash
 git init
-````
+```
 
 **Description:**
 Initializes a new Git repository in your current project folder. This creates a hidden `.git` directory that tracks all changes.
@@ -207,17 +202,15 @@ Restores files to their last saved state or undoes recent commits, depending on 
 
 ---
 
-# 🛒 Laravel Sales Inventory Management System
 
----
 
-## Project Title
+## **Project Title**
 
 **Laravel Sales Inventory Management System (Midterm Project)**
 
 ---
 
-## Description / Overview
+## **Description / Overview**
 
 This project is a **web-based Sales Inventory Management System** built using the **Laravel Framework**.
 It helps businesses efficiently manage product inventories, track sales, and organize products into categories.
@@ -225,7 +218,7 @@ The system also includes a dashboard that provides real-time sales data and inve
 
 ---
 
-## Objectives
+## **Objectives**
 
 1. Develop a full-stack CRUD application using **Laravel MVC architecture**.
 2. Implement database modeling and migrations for inventory and transactions.
@@ -235,7 +228,7 @@ The system also includes a dashboard that provides real-time sales data and inve
 
 ---
 
-## Features / Functionality
+## **Features / Functionality**
 
 ### **Sales Dashboard**
 
@@ -257,7 +250,7 @@ The system also includes a dashboard that provides real-time sales data and inve
 
 ---
 
-## Installation Instructions
+## **Installation Instructions**
 
 1. **Clone the Repository**
 
@@ -305,12 +298,11 @@ The system also includes a dashboard that provides real-time sales data and inve
    php artisan serve
    ```
 
-   The application will be accessible at:
-   [http://127.0.0.1:8000/dashboard](http://127.0.0.1:8000/dashboard)
+   The application will be accessible at [http://127.0.0.1:8000/dashboard](http://127.0.0.1:8000/dashboard).
 
 ---
 
-## Usage
+## **Usage**
 
 1. Access the **Dashboard** to view sales and inventory metrics.
 2. Use the **Categories** section to organize products.
@@ -319,13 +311,14 @@ The system also includes a dashboard that provides real-time sales data and inve
 
 ---
 
-## Author
+## **Author**
 
 **Mezrhime Kyle B. Tangalin**
 
 ---
 
-## License
+## **License**
 
 This project is licensed under the **MIT License**.
 © 2025 Mezrhime Kyle B. Tangalin
+
