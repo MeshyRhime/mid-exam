@@ -32,11 +32,6 @@ The project also demonstrates proper **Git and GitHub workflow**, including crea
 Follow these steps to set up the project locally:
 
 ### 1️⃣ Clone the Repository
-If this is your own repository:
-```bash
-git clone https://github.com/YourUsername/mid-exam.git
-````
-
 If you are cloning your **partner’s branch**:
 
 ```bash
@@ -85,10 +80,6 @@ git push -u origin partner-branch
 ---
 
 ## 🖼️ Screenshots or Code Snippets
-
-### 📷 Example Screenshot
-
-![Inventory System Screenshot](assets/sys 1 (1).png)
 
 ### 💻 Example Code Snippet
 

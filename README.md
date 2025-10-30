@@ -1,3 +1,14 @@
+# Dashboard Overview
+![Sales Dashboard](dashboard.png)
+
+# Products Tab Overview
+![Products Dashboard](products.png)
+
+# Categories Tab Overview
+![Categories Dashboard](category.png)
+
+
+
 ## 1. Create Local Repository
 
 **Command:**
